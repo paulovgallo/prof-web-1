@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Soccer Score</title>
+        <link rel="stylesheet" href="formulario.css">
+        <style>
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1 id="titulo">Formulario Soccer Score</h1>
+            <p id="subtitulo">Responda o questionário e ajude a página :)</p>
+        </div>
+        
+        <form>
+            <fieldset class="grupo">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" required> 
+                </div>
+                
+                <div>
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+                
+            </fieldset>
+
+            <div class="campo">
+                <label>Mbappé fez certo em ficar no PSG?</label>
+                <br>
+                <label>
+                    <input type="radio" name="certo" value="sim">Sim 
+                </label>
+                <label>
+                    <input type="radio" name="certo" value="nao">Não
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for="liga">Qual a melhor liga do mundo?</label>
+                <br>
+                <select id="liga">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Brasileirão</option>
+                    <option>Ligue One</option>
+                    <option>Premier League</option>
+                    <option>Bundelisga</option>
+                    <option>La Liga</option>
+                    <option>Serie A (italiano)</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <div>
+                    <label>Qual esportes assiste/pratica? </label>
+                    <br>
+                    <input type="checkbox" id="esporte1" name="esporte1" value="futebol">
+                    <label for="esporte1">Futebol</label>
+                    <input type="checkbox" id="esporte2" name="esporte2" value="basquete">
+                    <label for="esporte2">Basquete</label>
+                    <input type="checkbox" id="esporte3" name="esporte3" value="volei">
+                    <label for="esporte3">Volei</label>
+                    <input type="checkbox" id="esporte4" name="esporte4" value="tenis">
+                    <label for="esporte4">Tenis</label>
+                    <input type="checkbox" id="esporte5" name="esporte5" value="outro">
+                    <label for="esporte1">Outro</label>
+                    <input type="checkbox" id="esporte6" name="esporte6" value="nenhum">
+                    <label for="esporte1">Não Pratico</label>
+                </div>
+            </fieldset>
+
+            <div>
+                <br>
+                <label>Como o SOCCER SCORE pode melhorar?</label>
+                <br>
+                <textarea row="3" style="width:26em" id="dica" name="dica"></textarea>
+            </div>
+        
+            <button class="botao" type="submit">Pronto</button>
+        
+        </form>
+        
+    </body>
+</html>
